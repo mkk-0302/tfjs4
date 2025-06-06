@@ -20,7 +20,7 @@
           // Now load an image object in JavaScript
           const cake = new Image()
           cake.crossOrigin = 'anonymous'
-          cake.src = 'cake.jpg'
+          cake.src = './cake.jpg'
           cake.onload = () => {
             const cakeTensor = tf.browser.fromPixels(cake)
             console.log(
